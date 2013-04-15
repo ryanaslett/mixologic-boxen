@@ -27,9 +27,8 @@ class people::ryanaslett::settings::dock (
     mode    => '0600',
     notify     => Exec['Restart the Dock'],
   }
-
-  include dockutil
 */
+  include dockutil
   dockutil::item { 'Add Chrome':
     item     => "/Applications/Google Chrome.app",
     label    => "Google Chrome",
